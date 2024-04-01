@@ -61,10 +61,7 @@ public class CheckoutService {
 //        return ResponseEntity.ok(resultado);
 //    }
 
-
-
-
-
+    
     //ARDUINOHOJE
     public ResponseEntity<Object> fazerCheckoutParametro(String outraParametro) {
 
@@ -85,7 +82,7 @@ public class CheckoutService {
         }
 
         // Retorna resposta indicando que o checkout foi bem-sucedido com status 200
-        return ResponseEntity.ok("Checkout realizado com sucesso.");
+        return ResponseEntity.ok("200");
 
 
     }

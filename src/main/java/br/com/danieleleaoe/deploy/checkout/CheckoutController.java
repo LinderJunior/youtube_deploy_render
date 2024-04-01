@@ -120,16 +120,6 @@ public class CheckoutController {
 
 
 
-
-
-
-
-
-
-
-
-
-
     @PostMapping("test/body")
     public ResponseEntity<Object> fazerCheckoutByBody(@RequestBody MatriculaCarroRequestBody requestBody) {
         return checkoutService.fazerCheckoutBody(requestBody);
