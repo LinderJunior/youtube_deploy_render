@@ -9,4 +9,6 @@ public interface CheckoutRepository extends JpaRepository<Checkout, UUID> {
 
 
     Checkout findByMatriculaCarro(String matriculaCarro);
+
+   // Checkout encontrarPorMatriculaCarro(String matriculaCarro);
 }
