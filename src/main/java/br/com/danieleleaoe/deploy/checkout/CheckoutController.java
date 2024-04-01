@@ -112,11 +112,23 @@ public class CheckoutController {
         }
     }
 
-
+    //parametro caetano
     @PostMapping("test/parametro/{outraParametro}")
     public ResponseEntity<Object> fazerCheckoutByParametro(@PathVariable String outraParametro) {
         return checkoutService.fazerCheckoutParametro(outraParametro);
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
     @PostMapping("test/body")
     public ResponseEntity<Object> fazerCheckoutByBody(@RequestBody MatriculaCarroRequestBody requestBody) {
@@ -125,33 +137,15 @@ public class CheckoutController {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     @GetMapping
     public List<Checkout> list() {
         return this.checkoutRepository.findAll();
     }
 
-//    @PostMapping
-//    public Checkout create(@RequestBody Checkout checkout) {
-//        return this.checkoutRepository.save(checkout);
-//    }
+    @PostMapping
+    public Checkout create(@RequestBody Checkout checkout) {
+        return this.checkoutRepository.save(checkout);
+    }
 
     @GetMapping("/{matriculaCarro}")
     public ResponseEntity<Object> fazerCheckout(@PathVariable String matriculaCarro) {
